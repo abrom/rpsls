@@ -8,6 +8,10 @@ The carousel and tts engines have been cached in the project to simplify referen
 **N.B. The carousel engine has also been modified to allow for enabling/disabling of rotation in a way that better
 suits the game**
 
+# Demo
+![Demo of RPSLS](https://github.com/abrom/rpsls/blob/master/example/RPSLS.gif?raw=true)
+
+
 # Acknowledgements
 
 The RPSLS game uses the following open source software:
