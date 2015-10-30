@@ -1,0 +1,168 @@
+/* Main content wrapper */
+.content {
+    background: gainsboro;
+    margin: 20px;
+    border-radius: 10px;
+    border: darkgray 2px solid;
+}
+
+
+/* Audio controls */
+.audio-controls {
+    width: 40px;
+    font-size: 2em;
+    position: absolute;
+    z-index: 101;
+    left: 20px;
+    top: 10px;
+}
+
+
+/* Generic styles */
+.hide {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* The scoreboard */
+.score-wrapper {
+    padding-top: 20px
+}
+
+.scores {
+    border: solid 3px darkgreen;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    background: azure;
+}
+
+.scores .user, .scores .computer {
+    font-size: 1.5em;
+    padding: 10px
+}
+
+.scores .user {
+    padding-left: 0;
+}
+
+.score {
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .scores .user, .scores .computer {
+        display: block;
+        padding: 0;
+    }
+}
+
+
+/* User input carousel */
+.user-container {
+    width: 260px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.carousel .fa {
+    font-size: 5em;
+}
+
+.carousel .fa.fa-hand-lizard-o {
+    font-size: 4.5em;
+    margin: 4px 0 0 -5px;
+}
+
+.carousel .fa.fa-hand-rock-o {
+    margin: -5px 0 0 7px;
+}
+
+.carousel .fa.fa-hand-paper-o {
+    margin: 0 0 0 5px;
+}
+
+.select-box {
+    position: absolute;
+    border: 8px solid red;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    top: 100px;
+    left: 84px;
+    z-index: 101;
+}
+
+.buttons .fa {
+    cursor: pointer;
+    color: #4455E3
+}
+
+.buttons .fa:hover {
+    color: #3138D9;
+}
+
+.buttons .fa:active {
+    color: #507B99;
+}
+
+.buttons .fa:not(:active) {
+    transition: color .1s ease-in;
+}
+
+
+/* Flash messages */
+.messages {
+    height: 100px;
+}
+
+.message {
+    transition: all .2s ease-in-out;
+    line-height: 1em;
+}
+
+.message.grow {
+    font-size: 5em;
+}
+
+
+/* Result messages */
+.result {
+    font-size: 1.5em;
+    height: 30px
+}
+
+
+/* Computers 'brain' */
+.computer-container {
+    padding-top: 30px;
+    min-height: 150px;
+}
+
+.computer-container .choice {
+    font-size: 4em;
+    top: 8px;
+    left: 37px;
+    position: absolute;
+}
+
+.computer-container .computer {
+    color: #42a2da;
+}
+
+.fa-stack-8x {
+    width: 8em;
+}
+
+.fa-8x {
+    font-size: 8em;
+}

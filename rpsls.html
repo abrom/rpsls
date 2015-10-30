@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>RPSLS!</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="jquery.cloud9carousel.js"></script>
+    <script src="responsivevoice.js"></script>
+    <script src="rpsls.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="rpsls.css">
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="audio-controls center buttons">
+            <i class="fa fa-bell-o off hide"></i>
+            <i class="fa fa-bell-slash-o on"></i>
+          </div>
+
+          <div class="score-wrapper center">
+            <div class="scores">
+              <span class="user">
+                Your score:
+                <span class="score">
+                  0
+                </span>
+              </span>
+
+              <span class="computer">
+                Computer score:
+                <span class="score">
+                  0
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="user-container">
+            <div class="carousel buttons">
+              <i class="fa fa-hand-rock-o" data-action="rock"></i>
+              <i class="fa fa-hand-paper-o" data-action="paper"></i>
+              <i class="fa fa-hand-scissors-o" data-action="scissors"></i>
+              <i class="fa fa-hand-lizard-o" data-action="lizard"></i>
+              <i class="fa fa-hand-spock-o" data-action="spock"></i>
+            </div>
+
+            <div class="select-box"></div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="messages center"></div>
+          <div class="result center"></div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="computer-container center">
+            <span class="fa-stack fa-stack-8x">
+              <i class="fa fa-desktop fa-8x computer"></i>
+              <i class="fa choice fa-hand-rock-o"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
