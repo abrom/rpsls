@@ -74,7 +74,7 @@ $(function() {
       return
     }
     $(".carousel").data("carousel").activate();
-    $('.user-container').removeClass('disabled')
+    $('.user-container').removeClass('disabled');
     active = true;
   }
 
@@ -87,7 +87,7 @@ $(function() {
       return
     }
     $(".carousel").data("carousel").deactivate();
-    $('.user-container').addClass('disabled')
+    $('.user-container').addClass('disabled');
     active = false;
   }
 

@@ -54,13 +54,6 @@
     font-weight: 600;
 }
 
-@media (max-width: 480px) {
-    .scores .user, .scores .computer {
-        display: block;
-        padding: 0;
-    }
-}
-
 
 /* User input carousel */
 .user-container {
@@ -131,6 +124,14 @@
     transition: color .1s ease-in;
 }
 
+.disabled .buttons .fa:hover, .disabled .buttons .fa:active {
+    color: #666;
+}
+
+.disabled .buttons .fa:not(:active) {
+    transition: none;
+}
+
 
 /* Flash messages */
 .messages {
@@ -157,7 +158,6 @@
 /* Computers 'brain' */
 .computer-container {
     padding-top: 30px;
-    min-height: 150px;
 }
 
 .computer-container .computer {
@@ -172,4 +172,49 @@
 .fa-8x {
     font-size: 4em;
     width: 100%;
+}
+
+
+@media (max-width: 480px) {
+    html {
+        width: 100%;
+    }
+
+    body {
+        overflow: hidden;
+        background: gainsboro;
+        width: 100%;
+    }
+
+    .content {
+        margin: 0 5px;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .scores {
+        padding: 2px 10px;
+    }
+
+    .scores .user, .scores .computer {
+        display: block;
+        padding: 0;
+    }
+
+    .score-wrapper {
+        padding-top: 5px;
+    }
+
+    .carousel {
+        margin-bottom: 10px;
+    }
+
+    .messages {
+        height: 50px;
+    }
+
+    .message.grow {
+        font-size: 3.5em;
+    }
 }
