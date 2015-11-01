@@ -1,14 +1,19 @@
 <html>
   <head>
     <title>RPSLS!</title>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="jquery.cloud9carousel.js"></script>
-    <script src="responsivevoice.js"></script>
-    <script src="rpsls.js"></script>
+
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="rpsls.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="jquery.cloud9carousel.js"></script>
+    <script src="responsivevoice.js"></script>
+    <script src="rpsls.js"></script>
   </head>
 
   <body>
@@ -43,11 +48,11 @@
         <div class="col-sm-4">
           <div class="user-container">
             <div class="carousel buttons">
-              <i class="fa fa-hand-rock-o" data-action="rock"></i>
-              <i class="fa fa-hand-paper-o" data-action="paper"></i>
-              <i class="fa fa-hand-scissors-o" data-action="scissors"></i>
-              <i class="fa fa-hand-lizard-o" data-action="lizard"></i>
-              <i class="fa fa-hand-spock-o" data-action="spock"></i>
+              <div class="item" data-action="rock"><i class="fa fa-hand-rock-o"></i></div>
+              <div class="item" data-action="paper"><i class="fa fa-hand-paper-o"></i></div>
+              <div class="item" data-action="scissors"><i class="fa fa-hand-scissors-o"></i></div>
+              <div class="item" data-action="lizard"><i class="fa fa-hand-lizard-o"></i></div>
+              <div class="item" data-action="spock"><i class="fa fa-hand-spock-o"></i></div>
             </div>
 
             <div class="select-box"></div>
@@ -61,9 +66,9 @@
 
         <div class="col-sm-4">
           <div class="computer-container center">
-            <span class="fa-stack fa-stack-8x">
-              <i class="fa fa-desktop fa-8x computer"></i>
-              <i class="fa choice fa-hand-rock-o"></i>
+            <span class="fa-stack fa-8x">
+              <i class="fa fa-desktop fa-stack-2x computer"></i>
+              <i class="fa choice fa-stack-09x fa-hand-rock-o"></i>
             </span>
           </div>
         </div>

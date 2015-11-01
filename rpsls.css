@@ -74,21 +74,33 @@
     margin-bottom: 20px;
 }
 
+.carousel .item {
+    width: 70px;
+    text-align: center;
+}
+
 .carousel .fa {
     font-size: 5em;
 }
 
 .carousel .fa.fa-hand-lizard-o {
     font-size: 4.5em;
-    margin: 4px 0 0 -5px;
 }
 
-.carousel .fa.fa-hand-rock-o {
-    margin: -5px 0 0 7px;
+.carousel .fa.fa-hand-spock-o {
+    font-size: 4.8em;
 }
 
 .carousel .fa.fa-hand-paper-o {
-    margin: 0 0 0 5px;
+    padding-left: 3px;
+}
+
+.user-container.disabled .fa {
+    color: #666;
+}
+
+.user-container.disabled .select-box {
+    border-color: #555;
 }
 
 .select-box {
@@ -98,7 +110,7 @@
     height: 90px;
     border-radius: 10px;
     top: 100px;
-    left: 84px;
+    left: 76px;
     z-index: 101;
 }
 
@@ -148,21 +160,16 @@
     min-height: 150px;
 }
 
-.computer-container .choice {
-    font-size: 4em;
-    top: 8px;
-    left: 37px;
-    position: absolute;
-}
-
 .computer-container .computer {
     color: #42a2da;
 }
 
-.fa-stack-8x {
-    width: 8em;
+.fa-stack-09x {
+    font-size: 0.9em;
+    line-height: 1.5em;
 }
 
 .fa-8x {
-    font-size: 8em;
+    font-size: 4em;
+    width: 100%;
 }

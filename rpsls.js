@@ -74,6 +74,7 @@ $(function() {
       return
     }
     $(".carousel").data("carousel").activate();
+    $('.user-container').removeClass('disabled')
     active = true;
   }
 
@@ -86,6 +87,7 @@ $(function() {
       return
     }
     $(".carousel").data("carousel").deactivate();
+    $('.user-container').addClass('disabled')
     active = false;
   }
 
@@ -283,7 +285,7 @@ $(function() {
   // Initialise the user input carousel
   $(".carousel").Cloud9Carousel({
     bringToFront: true,
-    itemClass: 'fa',
+    itemClass: 'item',
     yRadius: 70,
     yOrigin: 40,
     xRadius: 110,
